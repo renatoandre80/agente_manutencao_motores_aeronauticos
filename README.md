@@ -82,7 +82,16 @@ Este agente foi desenvolvido para ser executado dentro do ecossistema do **ADK (
     ```
 
 2.  **Configure as variáveis de ambiente:**
-    Crie um arquivo `.env` na raiz do projeto com as chaves de API necessárias.
+    Crie uma cópia do arquivo `.env.example` e renomeie-a para `.env`. Em seguida, preencha o valor da sua chave de API do Google.
+
+    ```bash
+    # No Windows (Command Prompt)
+    copy .env.example .env
+    ```
+    O conteúdo do arquivo `.env` deve ser semelhante a:
+    ```
+    GOOGLE_API_KEY="SUA_CHAVE_DE_API_AQUI"
+    ```
 
 3.  **Inicie o servidor do ADK:**
     ```bash
